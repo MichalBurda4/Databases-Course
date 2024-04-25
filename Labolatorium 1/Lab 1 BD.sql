@@ -1,9 +1,9 @@
-Różne polecenia:
-stworzenie bazy danych - postgresqlpwd
-login na phpPgAdmin: s415707 lub s+415707 ale raczej to 1 
+--Różne polecenia:
+--stworzenie bazy danych - postgresqlpwd
+--login na phpPgAdmin: s415707 lub s+415707 ale raczej to 1 
 
-znak zachęty w psql =>
-psql – oficjalny terminalowy klient pozwalający na połączenie z bazą danych PostgreSQL
+--znak zachęty w psql =>
+--psql – oficjalny terminalowy klient pozwalający na połączenie z bazą danych PostgreSQL
 
 psql -U miburda -h lab.kis.agh.edu.pl -p 1600 
 
@@ -29,29 +29,29 @@ SELECT * FROM klienci WHERE miejscowosc NOT IN ('Kraków', 'Gdańsk', 'Siedlce')
 
 SELECT * FROM siatkowka.mecze;
 
-Można pisać małymi SELECT FROM IN itd ale lepiej duzymi
+--Można pisać małymi SELECT FROM IN itd ale lepiej duzymi
 
-\l	wyświetla listę baz danych
+--\l	wyświetla listę baz danych
 
-\dt	wyświetla listę tabel w bieżącej BD
+--\dt	wyświetla listę tabel w bieżącej BD
 
-\d nazwa_tabeli	wyświetla strukturę tabeli
+--\d nazwa_tabeli	wyświetla strukturę tabeli
 
-\?	wyświetla pomoc odnośnie poleceń psql
+--\?	wyświetla pomoc odnośnie poleceń psql
 
-\h	wyświetla pomoc odnośnie SQL
+--\h	wyświetla pomoc odnośnie SQL
 
-\q	kończy pracę z psql
+--\q	kończy pracę z psql
 
-\i nazwa_pliku	wykonuje skrypt
+--\i nazwa_pliku	wykonuje skrypt
 
-\dn	wyświetla nazwy schematów
+--\dn	wyświetla nazwy schematów
 
 set search_path to siatkowka; - korzystamy teraz z bazy siatkowka
 
-konto szelowe to unixy 
+--konto szelowe to unixy 
 
-zadanie 1.3 
+--zadanie 1.3 
 5 select * from czekoladki where czekolada in 'mleczna';
 
 SELECT * FROM klienci WHERE ulica LIKE 'A%'; - wielkosc liter ma znaczenia 
